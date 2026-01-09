@@ -93,6 +93,7 @@ platform_do_upgrade() {
 	cmcc,rax3000me|\
 	comfast,cf-wr632ax-ubootmod|\
 	cudy,tr3000-v1-ubootmod|\
+	cudy,wbr3000uax-v1-ubootmod|\
 	gatonetworks,gdsp|\
 	h3c,magic-nx30-pro|\
 	imou,hx21|\
@@ -111,6 +112,7 @@ platform_do_upgrade() {
 	netcore,n60-pro|\
 	qihoo,360t7|\
 	routerich,ax3000-ubootmod|\
+	routerich,be7200|\
 	snr,snr-cpe-ax2|\
 	tplink,tl-7dr7230-v1|\
 	tplink,tl-7dr7230-v2|\
@@ -147,6 +149,7 @@ platform_do_upgrade() {
 		emmc_do_upgrade "$1"
 		;;
 	asus,rt-ax52|\
+	asus,rt-ax57m|\
 	asus,rt-ax59u|\
 	asus,tuf-ax4200|\
 	asus,tuf-ax4200q|\
@@ -285,6 +288,7 @@ platform_check_image() {
 	cmcc,rax3000me|\
 	comfast,cf-wr632ax-ubootmod|\
 	cudy,tr3000-v1-ubootmod|\
+	cudy,wbr3000uax-v1-ubootmod|\
 	gatonetworks,gdsp|\
 	h3c,magic-nx30-pro|\
 	imou,lc-hx3001|\
@@ -383,6 +387,7 @@ platform_pre_upgrade() {
 
 	case "$board" in
 	asus,rt-ax52|\
+	asus,rt-ax57m|\
 	asus,rt-ax59u|\
 	asus,tuf-ax4200|\
 	asus,tuf-ax4200q|\
