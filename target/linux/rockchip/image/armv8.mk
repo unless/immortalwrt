@@ -334,7 +334,7 @@ define Device/nlnet_xiguapi-v3
   $(Device/rk3568)
   DEVICE_VENDOR := NLnet
   DEVICE_MODEL := XiGuaPi V3
-  DEVICE_PACKAGES := kmod-hwmon-pwmfan
+  DEVICE_PACKAGES := kmod-hwmon-pwmfan kmod-input-adc-keys kmod-saradc-rockchip
 endef
 TARGET_DEVICES += nlnet_xiguapi-v3
 
@@ -571,6 +571,14 @@ define Device/sinovoip_bpi-r2-pro
   DEVICE_PACKAGES := kmod-ata-ahci-dwc
 endef
 TARGET_DEVICES += sinovoip_bpi-r2-pro
+
+define Device/widora_mangopi-m28c
+  $(Device/rk3528)
+  DEVICE_VENDOR := Widora
+  DEVICE_MODEL := MangoPi M28C
+  DEVICE_PACKAGES := kmod-aic8800-sdio wpad-openssl kmod-hwmon-pwmfan
+endef
+TARGET_DEVICES += widora_mangopi-m28c
 
 define Device/widora_mangopi-m28k
   $(Device/rk3528)
